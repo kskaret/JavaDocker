@@ -1,5 +1,5 @@
 FROM java:8
 
-ADD target/javadocker-1.0-SNAPSHOT.jar app.jar
+ADD build/distributions/javadocker-1.0-SNAPSHOT.tar javadocker
 
-CMD java -jar app.jar
+CMD exec /javadocker/javadocker-1.0-SNAPSHOT/bin/javadocker
