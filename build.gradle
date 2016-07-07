@@ -1,4 +1,4 @@
-apply plugin: 'java'
+apply plugin: 'application'
 apply plugin: 'maven'
 
 group = 'no.kriska.samples.javadocker'
@@ -8,6 +8,8 @@ description = """Javadocker"""
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+mainClassName = "no.kriska.samples.javadocker.Main"
 
 repositories {
         
