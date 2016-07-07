@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'no.kriska.samples.javadocker'
+version = '1.0-SNAPSHOT'
+
+description = """Javadocker"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'ch.qos.logback', name: 'logback-classic', version:'1.1.1'
+    compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.7'
+}

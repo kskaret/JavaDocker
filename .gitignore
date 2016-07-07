@@ -16,3 +16,5 @@ hs_err_pid*
 /javadocker.iml
 /target/
 /dependency-reduced-pom.xml
+/.gradle/
+/build/
