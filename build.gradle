@@ -1,6 +1,7 @@
 apply plugin: 'maven'
 apply plugin: 'docker'
 apply plugin: 'spring-boot'
+apply plugin: 'docker-compose'
 
 group = 'no.kriska.samples.javadocker'
 version = '1.0-SNAPSHOT'
@@ -16,6 +17,7 @@ buildscript {
     }
     dependencies {
         classpath 'se.transmode.gradle:gradle-docker:1.2'
+        classpath "com.avast.gradle:docker-compose-gradle-plugin:0.3.6"
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.5.RELEASE")
     }
 }
@@ -31,6 +33,8 @@ task docker(type: Docker, dependsOn: build) {
         }
     }
 }
+
+composeUp.dependsOn 'docker'
 
 configurations {
     providedRuntime
