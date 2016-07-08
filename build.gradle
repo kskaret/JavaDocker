@@ -20,6 +20,8 @@ buildscript {
     }
 }
 
+group = 'krishtoffer'
+
 task docker(type: Docker, dependsOn: build) {
     dockerfile = "Dockerfile"
     doFirst {
