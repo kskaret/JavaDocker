@@ -12,6 +12,6 @@ public class DummyController {
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot, Gradle and Docker!";
+        return "Greetings from Spring Boot, Gradle, Docker, Compose and Git!";
     }
 }

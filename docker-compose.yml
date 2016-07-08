@@ -1,6 +1,6 @@
 version: '2'
 services:
   web:
-    image: krishtoffer/javadocker:unspecified
+    image: krishtoffer/javadocker:latest
     ports:
      - "8080:8080"
