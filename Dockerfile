@@ -1,6 +1,6 @@
 FROM java:8
 
-ADD javadocker-1.0-SNAPSHOT.jar javadocker.jar
+ADD javadocker-*.jar javadocker.jar
 
 EXPOSE 8080
 
